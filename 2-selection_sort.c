@@ -10,6 +10,7 @@
 void swap(int *array, size_t i, size_t min)
 {
 	int tmp = array[min];
+
 	array[min] = array[i];
 	array[i] = tmp;
 }
