@@ -6,9 +6,8 @@ void helper(int *array, int idx0, int idxn, size_t size);
  * @array: array
  * @i: index
  * @j: index
- * @size: size
  */
-void swap(int *array, int i, int j, size_t size)
+void swap(int *array, int i, int j)
 {
 	int tmp = array[i];
 	array[i] = array[j];
