@@ -55,6 +55,7 @@ void helper(int *array, int idx0, int idxn, size_t size)
 			}
 		}
 		swap(array, pivot, j);
+		print_array(array, size);
 
 		helper(array, idx0, j - 1, size);
 		helper(array, j + 1, idxn, size);
