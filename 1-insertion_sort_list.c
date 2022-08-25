@@ -20,8 +20,12 @@ void helper(listint_t **list, listint_t *prenode, listint_t *current)
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *node = *list, *current, *prenode;
+	listint_t *node, *current, *prenode;
 
+	if (list == NULL)
+		return;
+
+	node = list;
 	while (node != NULL)
 	{
 
