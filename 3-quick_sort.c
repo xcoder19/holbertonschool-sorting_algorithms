@@ -13,7 +13,6 @@ void swap(int *array, int i, int j, size_t size)
 	int tmp = array[i];
 	array[i] = array[j];
 	array[j] = tmp;
-	print_array(array, size);
 }
 /**
  * quick_sort - quick sort
@@ -49,7 +48,10 @@ void helper(int *array, int idx0, int idxn, size_t size)
 				j--;
 
 			if (j > i)
+			{
 				swap(array, i, j, size);
+				print_array(array, size);
+			}
 		}
 		swap(array, pivot, j, size);
 		helper(array, idx0, j - 1, size);
